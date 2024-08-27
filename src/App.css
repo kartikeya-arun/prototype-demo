@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +39,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid grey;
+  min-width: 300px;
+  background-color: #f6f6f6;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
