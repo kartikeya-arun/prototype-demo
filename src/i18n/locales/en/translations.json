@@ -5,5 +5,8 @@
     "address": "Address",
     "id": "ID",
     "phone": "Phone",
-    "language":"Language"
+    "language":"Language",
+    "submit":"Submit",
+    "successMessage":"Data submitted successfully",
+    "confirm":"OK"
 }

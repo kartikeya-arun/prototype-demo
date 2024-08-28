@@ -49,4 +49,12 @@
   min-width: 300px;
   background-color: #f6f6f6;
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+}
+
+.alert-container{
+  position: relative;
+  z-index: 9999;
+  min-width: 300px;
+  color: #499c66;
 }

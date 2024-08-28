@@ -5,5 +5,8 @@
     "address": "पत्ता",
     "id": "आयडी",
     "phone": "फोन",
-    "language":"भाषा"
+    "language":"भाषा",
+    "submit":"सबमिट करा",
+    "successMessage":"डेटा यशस्वीरित्या सबमिट केला",
+    "confirm":"ठीक आहे"
 }
