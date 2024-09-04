@@ -8,5 +8,6 @@
     "language":"Language",
     "submit":"Submit",
     "successMessage":"Data submitted successfully",
+    "failureMessage":"Oops! Something went wrong",
     "confirm":"OK"
 }

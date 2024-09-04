@@ -8,5 +8,6 @@
     "language":"भाषा",
     "submit":"सबमिट करा",
     "successMessage":"डेटा यशस्वीरित्या सबमिट केला",
+    "failureMessage":"अरेरे! काहीतरी चूक झाली",
     "confirm":"ठीक आहे"
 }
