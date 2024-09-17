@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import Alert from "./Alert"
 import { setDefaultNamespace } from "i18next"
+import { useNavigate } from "react-router-dom"
 
 
 export default function Card(){
@@ -16,6 +17,7 @@ export default function Card(){
     const [phone,setPhone]=useState('')
     const [response,setResponse]=useState(null)
     const [apiUrl,setApiUrl]=useState('http://localhost:3001/submit')
+    const navigate=useNavigate()
 
     const handleChange=(e)=>{
         setSelectedLanguage(e.target.value)
@@ -55,7 +57,7 @@ export default function Card(){
     useEffect(()=>{
         handleApiUrl()
     },[])
-    return(
+    return(<>
     <div className="card-container">
         <h1>{t('title')}</h1>
         <form>
@@ -90,6 +92,9 @@ export default function Card(){
             <input type="radio" value="mr" id="" checked={selectedLanguage==='mr'} onChange={(e)=>handleChange(e)} />
         </div>
         {showAlert&&(<div> <Alert msg={response?.message?t('successMessage'):t('failureMessage')} confLabel={t('confirm')} setShowAlert={setShowAlert} failed={response?.error&&1} /> </div>)}
+        
     </div>
+    <button onClick={()=>navigate('/page2')}>Next</button>
+    </>
     )
 }
