@@ -4,8 +4,15 @@ import Card from './Components/Card';
 import Page2 from './Components/Page2';
 import Page3 from './Components/Page3';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  useEffect(()=>{
+    console.log(window?.env?.appEnv)
+    window.ReactNativeWebView.postMessage(JSON.stringify({appEnv:'react web environment'})) 
+  },[])
+
   return (
     <div className="App">
       <Routes>
